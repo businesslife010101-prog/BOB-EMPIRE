@@ -1,79 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>BOB EMPIRE</title>
 
 <style>
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+html, body{
+  margin:0;
+  padding:0;
+  height:100%;
+  overflow-y:scroll;
+  scroll-snap-type:y mandatory;
+  font-family: Arial, sans-serif;
+  background:#000;
 }
 
-.section {
-  height: 100vh;
-  scroll-snap-align: start;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+.section{
+  height:100vh;
+  scroll-snap-align:start;
+  background-size:cover;
+  background-position:center;
+  position:relative;
 }
 
-.click-area {
-  position: absolute;
-  inset: 0;
+
+.section::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+}
+
+* CLICK HERE *
+.click-link{
+  position:absolute;
+  inset:0;
+  z-index:5;
+}
+
+* CORN HUM *
+.title{
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  z-index:6;
+  color:#fff;
+  font-size:18px;
+  font-weight:bold;
 }
 </style>
-
 </head>
+
 <body>
 
-<div class="feed">
-
-<div class="card">
-  <img src="Thumb1.jpg" class="thumb">
-  <div class="info">
-    <div class="title">Hot Video 1</div>
-    <a class="watch" href="https://www.pornhub.org/view_video.php?viewkey=697fde277ba2b" target="_blank">▶ Watch Video</a>
-  </div>
-</div>
-
-<div class="card">
-  <img src="thumb2.jpg" class="thumb">
-  <div class="info">
-    <div class="title">Hot Video 2</div>
-    <a class="watch" href="https://www.pornhub.org/view_video.php?viewkey=693aec5f730c9" target="_blank">▶ Watch Video</a>
-  </div>
+<div class="section" style="background-image:url('thumb1.jpg')">
+  <a class="click-link" href="https://www.pornhub.org/view_video.php?viewkey=697fde277ba2b" target="_blank"></a>
+  <div class="title">Hot Video 1</div>
 </div>
 
 
-<div class="card">
-  <img src="thumb3.jpg" class="thumb">
-  <div class="info">
-    <div class="title">Hot Video 3</div>
-    <a class="watch" href="https://www.pornhub.org/view_video.php?viewkey=68d586c6cf5ea" target="_blank">▶ Watch Video</a>
-  </div>
+<div class="section" style="background-image:url('thumb2.jpg')">
+  <a class="click-link" href="https://www.pornhub.org/view_video.php?viewkey=693aec5f730c9" target="_blank"></a>
+  <div class="title">Hot Video 2</div>
 </div>
 
 
-<div class="card">
-  <img src="thumb4.jpg" class="thumb">
-  <div class="info">
-    <div class="title">Hot Video 4</div>
-    <a class="watch" href="https://www.pornhub.org/view_video.php?viewkey=68cc6cb36f2de" target="_blank">▶ Watch Video</a>
-  </div>
+<div class="section" style="background-image:url('thumb3.jpg')">
+  <a class="click-link" href="https://www.pornhub.org/view_video.php?viewkey=68d586c6cf5ea" target="_blank"></a>
+  <div class="title">Hot Video 3</div>
 </div>
 
 
-<div class="card">
-  <img src="thumb5.jpg" class="thumb">
-  <div class="info">
-    <div class="title">Hot Video 5</div>
-    <a class="watch" href="https://www.pornhub.org/view_video.php?viewkey=69150de245765" target="_blank">▶ Watch Video</a>
-  </div>
+<div class="section" style="background-image:url('thumb4.jpg')">
+  <a class="click-link" href="https://www.pornhub.org/view_video.php?viewkey=68cc6cb36f2de" target="_blank"></a>
+  <div class="title">Hot Video 4</div>
 </div>
 
+<div class="section" style="background-image:url('thumb5.jpg')">
+  <a class="click-link" href="https://www.pornhub.org/view_video.php?viewkey=69150de245765" target="_blank"></a>
+  <div class="title">Hot Video 5</div>
 </div>
 
 </body>
