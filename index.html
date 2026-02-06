@@ -5,142 +5,115 @@
 <title>BOB EMPIRE</title>
 
 <style>
-body{
+*{
   margin:0;
-  font-family:Arial, sans-serif;
-  background:url("bg.jpg") center/cover fixed;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
 }
 
-.overlay{
-  background:rgba(0,0,0,0.75);
-  min-height:100vh;
-  padding:15px;
-}
-
-h1{
+body{
+  background:#000;
   color:#fff;
-  text-align:center;
-  margin-bottom:15px;
 }
 
-.video-list{
-  display:flex;
-  flex-direction:column;
-  gap:20px;
-}
-
-.video-card{
-  background:#111;
-  border-radius:15px;
-  overflow:hidden;
-  color:white;
-}
-
-.video-card img{
-  width:100%;
-  display:block;
-}
-
-.video-card h3{
-  padding:10px;
-  font-size:16px;
-}
-
-.watch-btn{
-  display:block;
-  margin:10px;
+.header{
   padding:12px;
   text-align:center;
-  background:#ffcc00;
-  color:black;
-  text-decoration:none;
-  border-radius:10px;
+  background:#111;
+  font-size:20px;
   font-weight:bold;
 }
 
-.watch-btn:hover{
-  background:#ffaa00;
+.feed{
+  max-width:480px;
+  margin:auto;
+}
+
+.card{
+  margin-bottom:25px;
+  background:#111;
+}
+
+.thumb{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.info{
+  padding:10px;
+}
+
+.title{
+  font-size:16px;
+  margin-bottom:8px;
+}
+
+.watch{
+  display:block;
+  text-align:center;
+  padding:12px;
+  background:#ffcc00;
+  color:#000;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:6px;
 }
 </style>
 </head>
 
 <body>
-<div class="overlay">
-<h1>🔥 Trending Videos</h1>
 
-<div class="video-list">
+<div class="header">🔥 Trending Videos</div>
 
+<div class="feed">
 
-<div class="video-card">
-<img src="Thumb1.jpg">
-<h3>Hot Video 1</h3>
-<a class="watch-btn" href="https://www.pornhub.org/view_video.php?viewkey=697fde277ba2b" target="_blank">▶ Watch Video</a>
+<div class="card">
+  <img src="Thumb1.jpg" class="thumb">
+  <div class="info">
+    <div class="title">Hot Video 1</div>
+    <a class="watch" href="https://www.pornhub.org/view_video.php?viewkey=697fde277ba2b" target="_blank">▶ Watch Video</a>
+  </div>
 </div>
 
 <!-- VIDEO 2 -->
-<div class="video-card">
-<img src="thumb2.jpg">
-<h3>Hot Video 2</h3>
-<a class="watch-btn" href="VIDEO_LINK_2" target="_blank">▶ Watch Video</a>
+<div class="card">
+  <img src="thumb2.jpg" class="thumb">
+  <div class="info">
+    <div class="title">Hot Video 2</div>
+    <a class="watch" href="VIDEO_LINK_2" target="_blank">▶ Watch Video</a>
+  </div>
 </div>
 
 <!-- VIDEO 3 -->
-<div class="video-card">
-<img src="thumb3.jpg">
-<h3>Hot Video 3</h3>
-<a class="watch-btn" href="VIDEO_LINK_3" target="_blank">▶ Watch Video</a>
+<div class="card">
+  <img src="thumb3.jpg" class="thumb">
+  <div class="info">
+    <div class="title">Hot Video 3</div>
+    <a class="watch" href="VIDEO_LINK_3" target="_blank">▶ Watch Video</a>
+  </div>
 </div>
 
 <!-- VIDEO 4 -->
-<div class="video-card">
-<img src="thumb4.jpg">
-<h3>Hot Video 4</h3>
-<a class="watch-btn" href="VIDEO_LINK_4" target="_blank">▶ Watch Video</a>
+<div class="card">
+  <img src="thumb4.jpg" class="thumb">
+  <div class="info">
+    <div class="title">Hot Video 4</div>
+    <a class="watch" href="VIDEO_LINK_4" target="_blank">▶ Watch Video</a>
+  </div>
 </div>
 
 <!-- VIDEO 5 -->
-<div class="video-card">
-<img src="thumb5.jpg">
-<h3>Hot Video 5</h3>
-<a class="watch-btn" href="VIDEO_LINK_5" target="_blank">▶ Watch Video</a>
-</div>
-
-<!-- VIDEO 6 -->
-<div class="video-card">
-<img src="thumb6.jpg">
-<h3>Hot Video 6</h3>
-<a class="watch-btn" href="VIDEO_LINK_6" target="_blank">▶ Watch Video</a>
-</div>
-
-<!-- VIDEO 7 -->
-<div class="video-card">
-<img src="thumb7.jpg">
-<h3>Hot Video 7</h3>
-<a class="watch-btn" href="VIDEO_LINK_7" target="_blank">▶ Watch Video</a>
-</div>
-
-<!-- VIDEO 8 -->
-<div class="video-card">
-<img src="thumb8.jpg">
-<h3>Hot Video 8</h3>
-<a class="watch-btn" href="VIDEO_LINK_8" target="_blank">▶ Watch Video</a>
-</div>
-
-<!-- VIDEO 9 -->
-<div class="video-card">
-<img src="thumb9.jpg">
-<h3>Hot Video 9</h3>
-<a class="watch-btn" href="VIDEO_LINK_9" target="_blank">▶ Watch Video</a>
-</div>
-
-<!-- VIDEO 10 -->
-<div class="video-card">
-<img src="thumb10.jpg">
-<h3>Hot Video 10</h3>
-<a class="watch-btn" href="VIDEO_LINK_10" target="_blank">▶ Watch Video</a>
+<div class="card">
+  <img src="thumb5.jpg" class="thumb">
+  <div class="info">
+    <div class="title">Hot Video 5</div>
+    <a class="watch" href="VIDEO_LINK_5" target="_blank">▶ Watch Video</a>
+  </div>
 </div>
 
 </div>
-</div>
+
 </body>
 </html>
