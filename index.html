@@ -2,73 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BOB EMPIRE</title>
+  <title>BOB EMPIRE 🔞</title>
 
   <style>
-    *{
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
       font-family: Arial, sans-serif;
-    }
-
-    body{
-      min-height: 100vh;
-      background-image: url("bg.jpg"); /* tumhari photo */
+      background-image: url("bg.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .overlay{
-      background: rgba(0,0,0,0.6);
-      padding: 35px 25px;
-      border-radius: 18px;
+    .card {
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      border-radius: 15px;
       text-align: center;
       color: white;
       width: 90%;
-      max-width: 380px;
-      backdrop-filter: blur(4px);
+      max-width: 350px;
     }
 
-    .overlay h1{
-      font-size: 28px;
+    .thumb {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 22px;
       margin-bottom: 10px;
-      letter-spacing: 1px;
     }
 
-    .overlay p{
-      font-size: 15px;
+    p {
+      font-size: 14px;
       opacity: 0.9;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
-    .overlay button{
-      padding: 12px 25px;
-      border: none;
-      border-radius: 25px;
-      background: #ffcc00;
+    a.watch-btn {
+      display: block;
+      text-decoration: none;
+      background: #ff9900;
       color: black;
-      font-size: 15px;
+      padding: 12px;
+      border-radius: 8px;
       font-weight: bold;
-      cursor: pointer;
+      font-size: 16px;
     }
 
-    .overlay button:hover{
+    a.watch-btn:hover {
       background: #ffaa00;
+    }
+
+    .warning {
+      font-size: 12px;
+      margin-top: 12px;
+      opacity: 0.7;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="overlay">
-    <h1>🔥 BOB EMPIRE</h1>
-    <p>Welcome to my official website</p>
-    <button>ENTER</button>
+  <div class="card">
+    <!-- Thumbnail image (optional) -->
+    <img class="thumb" src="bg.jpg" alt="Video Thumbnail">
+
+    <h1>🔞 18+ Video</h1>
+    <p>Only for adults. Click below to watch full video.</p>
+
+    <!-- LINK OUT BUTTON -->
+    <a class="watch-btn" 
+       href="https://www.pornhub.org/view_video.php?viewkey=697fde277ba2b" 
+       target="_blank">
+       ▶ Watch Video
+    </a>
+
+    <div class="warning">
+      18+ Only | External Link
+    </div>
   </div>
 
 </body>
