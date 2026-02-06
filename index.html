@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BOB EMPIRE 🔞</title>
+  <title>BOB EMPIRE</title>
 
   <style>
     body {
@@ -11,80 +11,139 @@
       background-image: url("bg.jpg");
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
       min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
-    .card {
-      background: rgba(0,0,0,0.7);
+    .overlay {
+      background: rgba(0,0,0,0.75);
+      min-height: 100vh;
       padding: 20px;
-      border-radius: 15px;
-      text-align: center;
-      color: white;
-      width: 90%;
-      max-width: 350px;
-    }
-
-    .thumb {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
     }
 
     h1 {
-      font-size: 22px;
-      margin-bottom: 10px;
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
     }
 
-    p {
-      font-size: 14px;
-      opacity: 0.9;
-      margin-bottom: 15px;
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
     }
 
-    a.watch-btn {
+    .video-card {
+      background: #111;
+      border-radius: 12px;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+    }
+
+    .video-card img {
+      width: 100%;
       display: block;
-      text-decoration: none;
-      background: #ff9900;
+    }
+
+    .video-card h3 {
+      font-size: 14px;
+      padding: 8px;
+    }
+
+    .watch-btn {
+      display: block;
+      margin: 10px;
+      padding: 10px;
+      background: #ffcc00;
       color: black;
-      padding: 12px;
+      text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      font-size: 16px;
     }
 
-    a.watch-btn:hover {
+    .watch-btn:hover {
       background: #ffaa00;
-    }
-
-    .warning {
-      font-size: 12px;
-      margin-top: 12px;
-      opacity: 0.7;
     }
   </style>
 </head>
 
 <body>
+<div class="overlay">
+<h1>🔥 Top 10 Videos</h1>
 
-  <div class="card">
-    <img class="thumb" src="bg.jpg" alt="Video Thumbnail">
+<div class="video-grid">
 
-    <h1>🔞 18+ Video</h1>
-    <p>Only for adults. Click below to watch full video.</p>
-    <a class="watch-btn" 
-       href="https://www.pornhub.org/view_video.php?viewkey=697fde277ba2b" 
-       target="_blank">
-       ▶ Watch Video
-    </a>
+<!-- VIDEO 1 -->
+<div class="video-card">
+  <img src="thumb1.jpg">
+  <h3>Hot Video 1</h3>
+  <a class="watch-btn" href="https://www.pornhub.org/view_video.php?viewkey=697fde277ba2b" target="_blank">▶ Watch Video</a>
+</div>
 
-    <div class="warning">
-      18+ Only | External Link
-    </div>
-  </div>
+<!-- VIDEO 2 -->
+<div class="video-card">
+  <img src="thumb2.jpg">
+  <h3>Hot Video 2</h3>
+  <a class="watch-btn" href="VIDEO_LINK_2" target="_blank">▶ Watch Video</a>
+</div>
 
+<!-- VIDEO 3 -->
+<div class="video-card">
+  <img src="thumb3.jpg">
+  <h3>Hot Video 3</h3>
+  <a class="watch-btn" href="VIDEO_LINK_3" target="_blank">▶ Watch Video</a>
+</div>
+
+<!-- VIDEO 4 -->
+<div class="video-card">
+  <img src="thumb4.jpg">
+  <h3>Hot Video 4</h3>
+  <a class="watch-btn" href="VIDEO_LINK_4" target="_blank">▶ Watch Video</a>
+</div>
+
+<!-- VIDEO 5 -->
+<div class="video-card">
+  <img src="thumb5.jpg">
+  <h3>Hot Video 5</h3>
+  <a class="watch-btn" href="VIDEO_LINK_5" target="_blank">▶ Watch Video</a>
+</div>
+
+<!-- VIDEO 6 -->
+<div class="video-card">
+  <img src="thumb6.jpg">
+  <h3>Hot Video 6</h3>
+  <a class="watch-btn" href="VIDEO_LINK_6" target="_blank">▶ Watch Video</a>
+</div>
+
+<!-- VIDEO 7 -->
+<div class="video-card">
+  <img src="thumb7.jpg">
+  <h3>Hot Video 7</h3>
+  <a class="watch-btn" href="VIDEO_LINK_7" target="_blank">▶ Watch Video</a>
+</div>
+
+<!-- VIDEO 8 -->
+<div class="video-card">
+  <img src="thumb8.jpg">
+  <h3>Hot Video 8</h3>
+  <a class="watch-btn" href="VIDEO_LINK_8" target="_blank">▶ Watch Video</a>
+</div>
+
+<!-- VIDEO 9 -->
+<div class="video-card">
+  <img src="thumb9.jpg">
+  <h3>Hot Video 9</h3>
+  <a class="watch-btn" href="VIDEO_LINK_9" target="_blank">▶ Watch Video</a>
+</div>
+
+<!-- VIDEO 10 -->
+<div class="video-card">
+  <img src="thumb10.jpg">
+  <h3>Hot Video 10</h3>
+  <a class="watch-btn" href="VIDEO_LINK_10" target="_blank">▶ Watch Video</a>
+</div>
+
+</div>
+</div>
 </body>
-</html>
+  </html>
