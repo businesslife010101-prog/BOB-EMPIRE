@@ -5,63 +5,32 @@
 <title>BOB EMPIRE</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial, sans-serif;
+body {
+  margin: 0;
+  height: 100vh;
+  background: url("bg.jpg") center/cover no-repeat;
+  position: relative;
 }
 
-body{
-  background:#000;
-  color:#fff;
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.7)
+  );
+  animation: glow 6s infinite alternate;
 }
 
-.header{
-  padding:12px;
-  text-align:center;
-  background:#111;
-  font-size:20px;
-  font-weight:bold;
-}
-
-.feed{
-  max-width:480px;
-  margin:auto;
-}
-
-.card{
-  margin-bottom:25px;
-  background:#111;
-}
-
-.thumb{
-  width:100%;
-  height:auto;
-  display:block;
-}
-
-.info{
-  padding:10px;
-}
-
-.title{
-  font-size:16px;
-  margin-bottom:8px;
-}
-
-.watch{
-  display:block;
-  text-align:center;
-  padding:12px;
-  background:#ffcc00;
-  color:#000;
-  font-weight:bold;
-  text-decoration:none;
-  border-radius:6px;
+@keyframes glow {
+  0% { opacity: 0.6; }
+  100% { opacity: 0.9; }
 }
 </style>
-</head>
+
+<div class="overlay"></div>
 
 <body>
 
