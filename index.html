@@ -1,40 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <title>BOB EMPIRE</title>
 
 <style>
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.section {
   height: 100vh;
-  background: url("bg.jpg") center/cover no-repeat;
+  scroll-snap-align: start;
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 
-.overlay {
+.click-area {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    120deg,
-    rgba(0,0,0,0.7),
-    rgba(0,0,0,0.4),
-    rgba(0,0,0,0.7)
-  );
-  animation: glow 6s infinite alternate;
-}
-
-@keyframes glow {
-  0% { opacity: 0.6; }
-  100% { opacity: 0.9; }
 }
 </style>
 
-<div class="overlay"></div>
-
+</head>
 <body>
-
-<div class="header">🔥 Trending Videos</div>
 
 <div class="feed">
 
