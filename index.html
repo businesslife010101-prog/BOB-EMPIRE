@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BOB EMPIRE - Demo Dashboard</title>
+  <title>BOB EMPIRE - Dashboard</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -204,9 +204,9 @@
     <div class="topbar">
       <div class="brand">
         <h1>BOB EMPIRE</h1>
-        <p>Professional demo dashboard for sample portfolio presentation.</p>
+        <p>Professional portfolio dashboard.</p>
       </div>
-      <div class="badge">DEMO DATA ONLY • NOT A REAL FINANCIAL STATEMENT</div>
+      <div class="badge">PRIVATE DASHBOARD</div>
     </div><div class="grid">
   <section>
     <div class="panel">
@@ -214,13 +214,13 @@
         <div>
           <h2>Revenue Overview</h2>
           <p>
-            Clean portfolio-style dashboard with editable demo values for daily, weekly, monthly, and yearly figures.
+            Clean portfolio-style dashboard with editable values for daily, weekly, monthly, and yearly figures.
             You can change all numbers anytime and save them in your browser.
           </p>
         </div>
         <div class="actions">
           <button class="primary" onclick="saveData()">Save Changes</button>
-          <button class="secondary" onclick="resetDefaults()">Reset Demo</button>
+          <button class="secondary" onclick="resetDefaults()">Reset Data</button>
         </div>
       </div>
 
@@ -250,7 +250,7 @@
 
     <div class="panel" style="margin-top: 20px;">
       <h3 class="section-title">Withdrawal Activity</h3>
-      <p class="sub">Editable demo list for UI practice and presentation mockups.</p>
+      <p class="sub">Editable payout activity list.</p>
       <div class="table-wrap">
         <table>
           <thead>
@@ -270,24 +270,24 @@
   <aside>
     <div class="panel">
       <h3 class="section-title">Edit Dashboard</h3>
-      <p class="sub">Change demo values whenever you want. Data saves to your device using localStorage.</p>
+      <p class="sub">Change values whenever you want. Data saves to your device using localStorage.</p>
 
       <div class="form-grid">
         <div class="field">
           <label>1 Day Revenue</label>
-          <input id="inputDay" type="number" value="12500" />
+          <input id="inputDay" type="number" value="1211" />
         </div>
         <div class="field">
           <label>7 Days Revenue</label>
-          <input id="inputWeek" type="number" value="74300" />
+          <input id="inputWeek" type="number" value="7470" />
         </div>
         <div class="field">
           <label>1 Month Revenue</label>
-          <input id="inputMonth" type="number" value="318900" />
+          <input id="inputMonth" type="number" value="31800" />
         </div>
         <div class="field">
           <label>1 Year Revenue</label>
-          <input id="inputYear" type="number" value="3842000" />
+          <input id="inputYear" type="number" value="384200" />
         </div>
       </div>
 
@@ -321,7 +321,7 @@
       </div>
 
       <div class="danger-note">
-        This template is intentionally marked as demo/sample data only. Do not use it to mislead people, fake proof of earnings, or misrepresent financial results.
+        Internal dashboard template. Values can be updated manually from the control panel.
       </div>
     </div>
   </aside>
@@ -342,7 +342,7 @@
       ]
     };
 
-    let state = JSON.parse(localStorage.getItem('bobEmpireDemo')) || defaults;
+    let state = JSON.parse(localStorage.getItem('bobEmpireData')) || defaults;
 
     function formatINR(num) {
       return new Intl.NumberFormat('en-IN', {
@@ -386,7 +386,7 @@
       state.revenue.year = Number(document.getElementById('inputYear').value || 0);
       persist();
       renderRevenue();
-      alert('Demo values saved successfully.');
+      alert('Values saved successfully.');
     }
 
     function addWithdrawal() {
@@ -424,10 +424,10 @@
     }
 
     function persist() {
-      localStorage.setItem('bobEmpireDemo', JSON.stringify(state));
+      localStorage.setItem('bobEmpireData', JSON.stringify(state));
     }
 
     renderRevenue();
     renderWithdrawals();
   </script></body>
-        </html>
+      </html>
