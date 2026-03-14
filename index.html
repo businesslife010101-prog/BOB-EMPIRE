@@ -14,26 +14,48 @@ background:#fafafa;
 
 /* HEADER */
 
-header{
-background:#8b0000;
-color:white;
-padding:15px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-header h1{
+body{
+font-family: Arial;
 margin:0;
+
+/* animated gift background */
+
+background-image:url("https://cdn-icons-png.flaticon.com/512/3132/3132693.png"),
+url("https://cdn-icons-png.flaticon.com/512/869/869636.png"),
+url("https://cdn-icons-png.flaticon.com/512/3468/3468377.png");
+
+background-repeat:no-repeat,no-repeat,no-repeat;
+
+background-position:
+10% 20%,
+80% 40%,
+50% 80%;
+
+background-size:80px,80px,80px;
+
+animation:giftsMove 10s infinite alternate;
+
 }
 
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:bold;
+/* animation */
+
+@keyframes giftsMove{
+
+0%{
+background-position:
+10% 20%,
+80% 40%,
+50% 80%;
 }
 
+100%{
+background-position:
+20% 30%,
+70% 50%,
+60% 70%;
+}
+
+}
 /* HERO */
 
 .hero{
