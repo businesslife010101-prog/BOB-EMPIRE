@@ -15,16 +15,22 @@ background:#fafafa;
 /* HEADER */
 
 <header class="top-header">
-  <div class="brand-area">
-    <h1>Royal Gift Gallery</h1>
-    <p>Toys, Gifts, Cosmetic & Jaipuri Lahathi</p>
-  </div>
 
-  <nav class="main-nav">
-    <a href="#">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<div class="menu-left">
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</div>
+
+<div class="shop-title">
+Royal Gift Gallery
+</div>
+
+<div class="menu-right">
+<a href="tel:+919999999999">Call</a>
+<a href="https://wa.me/919999999999">WhatsApp</a>
+</div>
+
 </header>
 
 /* animated gift background */
@@ -130,7 +136,39 @@ text-align:center;
 .mapbtn{
 background:#0a66c2;
 }
+/* HEADER DESIGN */
 
+.top-header{
+background:linear-gradient(90deg,#7a0000,#b30000,#ff2a2a);
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 25px;
+color:white;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.brand-area h1{
+margin:0;
+font-size:28px;
+font-weight:bold;
+}
+
+.brand-area p{
+margin:0;
+font-size:12px;
+}
+
+.main-nav a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+font-weight:bold;
+}
+
+.main-nav a:hover{
+text-decoration:underline;
+  }
 </style>
 </head>
 
